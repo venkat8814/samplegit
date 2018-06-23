@@ -13,16 +13,16 @@ import org.testng.annotations.Test;
 
 
 
-public class samplegittest {
+public class samplegittest2 {
 	
 	@Test
 	public void logintest() throws IOException
 	{
 		WebDriver wd = new FirefoxDriver();
 		wd.manage().window().maximize();
-		wd.get("https://www.bing.com");
+		wd.get("https://www.ntltaxi.com");
 		File src=((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\workspace1\\Samplegittest\\screenshot\\test.jpg"));
+		FileUtils.copyFile(src, new File("C:\\workspace1\\Samplegittest\\screenshot\\test1.jpg"));
 		
 	}
 
